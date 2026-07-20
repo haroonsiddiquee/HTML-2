@@ -114,7 +114,31 @@
     <input type="checkbox" name="subscribe" /> Subscribe to the NewsLetter<br />
     <input type="radio" name="gender" value="male" /> Male<br />
     <input type="radio" name="gender" value="female" /> Female<br />
-    <input type="date" name="dob" /><br />
-    <input type="file" name="upload" /><br />
+    <input type="date" name="dob" required /><br />
+    <input type="file" name="upload" disabled /><br />
+
+    <h3>Use of Labels</h3>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" />
+
+    <h3>Use of Textarea</h3>
+    <textarea
+      name="message"
+      rows="4"
+      cols="50"
+      placeholder="Enter your message"
+    ></textarea>
+
+    <h3>Creating a Dropdown</h3>
+    <select name="country">
+      <option value="pk">Pakistan</option>
+      <option value="ksa">Saudia Arabia</option>
+      <option value="cn">China</option>
+    </select>
+
+    <h3>Creating a Button</h3>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button">Empty Button</button>
   </body>
 </html>
